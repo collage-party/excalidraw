@@ -746,15 +746,6 @@ const ExcalidrawWrapper = () => {
           );
         }}
       >
-        <AppMainMenu
-          setCollabDialogShown={setCollabDialogShown}
-          isCollaborating={isCollaborating}
-          isCollabEnabled={!isCollabDisabled}
-        />
-        <AppWelcomeScreen
-          setCollabDialogShown={setCollabDialogShown}
-          isCollabEnabled={!isCollabDisabled}
-        />
         <OverwriteConfirmDialog>
           <OverwriteConfirmDialog.Actions.ExportToImage />
           <OverwriteConfirmDialog.Actions.SaveToDisk />
@@ -774,7 +765,6 @@ const ExcalidrawWrapper = () => {
             </OverwriteConfirmDialog.Action>
           )}
         </OverwriteConfirmDialog>
-        <AppFooter />
         <TTDDialog
           onTextSubmit={async (input) => {
             try {
